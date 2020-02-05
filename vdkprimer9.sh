@@ -22,7 +22,7 @@ GITDIR=/home/lfa81121/vdkprimer
 
 bash $GITDIR/primerHelper2.sh -v 788chr9.5mbto10mb_woindels.recode.vcf -r /work/cemlab/reference_genomes/97103_v2.fa -c Cla97Chr09 -f 5957084 -t 10328768 -a "resistant_bulk" -b "susceptible_bulk" -o 788chr9.5mbto10mb
 
-module load BLAST+/2.7.1-foss-2016b-Python-2.7.1.14
+module load BLAST+/2.7.1-foss-2016b-Python-2.7.14
 
 blastn -query 788chr9.5mbto10mb.fa -db /work/cemlab/reference_genomes/97103_v2.fa -outfmt 7  -evalue 0.5 -out 788chr9.5mbto10mb_evalue.fa
 
