@@ -32,6 +32,8 @@ awk '{getline b;printf("%s %s\n",$0,b)}' result_788chr5.17mbto31mb_evalue.fa > r
 
 awk '{getline b;printf("%s %s\n",$0,b)}' 788chr5.17mbto31mb.fa > seq3_2.fa
 
+awk '{getline b;printf("%s %s\n",$0,b)}' 788chr5.17mbto31mb.501.fa > seq501.fa
+
 module load EMBOSS/6.6.0-foss-2016b
 
 infoseq 788chr5.17mbto31mb.fa -only -desc -name -length -pgc > gc3_2.fa
