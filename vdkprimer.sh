@@ -1,5 +1,5 @@
 #PBS -S /bin/bash
-#PBS -N index_realigned__R
+#PBS -N vdkprimer
 #PBS -q batch
 #PBS -l nodes=1:ppn=8:AMD
 #PBS -l walltime=480:00:00
