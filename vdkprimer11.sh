@@ -20,9 +20,9 @@ GITDIR=/home/lfa81121/vdkprimer
 
 /usr/local/apps/eb/VCFtools/0.1.15-foss-2016b-Perl-5.24.1/bin/vcftools --gzvcf 788chr11.29mbto31mb.recode.vcf --remove-indels --min-alleles 2 --max-alleles 2 --minQ 50 --minDP 5 --recode --recode-INFO-all --out 788chr11.29mbto31mb_woindels
 
-bash $GITDIR/primerHelper2.sh -v 788chr11.29mbto31mb_woindels.recode.vcf -r /work/cemlab/reference_genomes/97103_v2.fa -c Cla97Chr11 -f 5957084 -t 10328768 -a "resistant_bulk" -b "susceptible_bulk" -o 788chr11.29mbto31mb
+bash $GITDIR/primerHelper2.sh -v 788chr11.29mbto31mb_woindels.recode.vcf -r /work/cemlab/reference_genomes/97103_v2.fa -c Cla97Chr11 -f 29535392 -t 31379210 -a "resistant_bulk" -b "susceptible_bulk" -o 788chr11.29mbto31mb
 
-module load BLAST+/2.7.1-foss-2016b-Python-2.7.1
+module load BLAST+/2.7.1-foss-2016b-Python-2.7.1.14
 
 blastn -query 788chr11.29mbto31mb.fa -db /work/cemlab/reference_genomes/97103_v2.fa -outfmt 7  -evalue 0.5 -out 788chr11.29mbto31mb_evalue.fa
 
