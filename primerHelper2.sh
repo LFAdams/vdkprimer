@@ -31,5 +31,10 @@ sed '/^#/ d' < $OUTFILE.recode.vcf |
 
 bedtools getfasta -fi $REF -fo $OUTFILE.fa -bed tmpbed.bed
 
+sed '/^#/ d' < $OUTFILE.recode.vcf |
+  awk -v OFS='\t' '{ if(length($5) == 1 && ($2 - prev) > 30){print $1, $2 - 250, $2 + 250; prev=$2; next} prev=$2}' > tmpbed2.bed
+
+bedtools getfasta -fi $REF -fo $OUTFILE.501.fa -bed tmpbed2.bed
+
 rm tmpkeep.txt
 rm tmpbed.bed
