@@ -41,3 +41,4 @@ sed '/^#/ d' < $OUTFILE.recode.vcf |
 
 rm tmpkeep.txt
 rm tmpbed.bed
+rm tmpbed2.bed
