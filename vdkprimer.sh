@@ -16,7 +16,7 @@ GITDIR=/home/lfa81121/vdkprimer
 
 
 ###########################################################
-/usr/local/apps/eb/VCFtools/0.1.15-foss-2016b-Perl-5.24.1/bin/vcftools --gzvcf RS_raw_snps_and_indels.vcf --recode --recode-INFO-all --indv resistant_bulk --indv susceptible_bulk --chr Cla97Chr02 --from-bp 4380882 --to-bp 7289214 --out 788chr2.4mbto7mb
+/usr/local/apps/eb/VCFtools/0.1.15-foss-2016b-Perl-5.24.1/bin/vcftools --gzvcf /home/lfa81121/primer/RS_raw_snps_and_indels.vcf --recode --recode-INFO-all --indv resistant_bulk --indv susceptible_bulk --chr Cla97Chr02 --from-bp 4380882 --to-bp 7289214 --out 788chr2.4mbto7mb
 
 /usr/local/apps/eb/VCFtools/0.1.15-foss-2016b-Perl-5.24.1/bin/vcftools --gzvcf 788chr2.4mbto7mb.recode.vcf --remove-indels --min-alleles 2 --max-alleles 2 --minQ 50 --minDP 5 --recode --recode-INFO-all --out 788chr2.4mbto7mb_woindels
 
