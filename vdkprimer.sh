@@ -37,3 +37,4 @@ awk '{getline b;printf("%s %s\n",$0,b)}' 788chr2.4mbto7mb.501.fa > seq501.fa
 module load EMBOSS/6.6.0-foss-2016b
 
 infoseq 788chr2.4mbto7mb.fa -only -desc -name -length -pgc > gc3_2.fa
+#####
